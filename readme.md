@@ -21,7 +21,7 @@ scintkit_project/
 
 You can install this package locally in editable mode. Navigate to the root directory (where `setup.py` is located) and run:
 
-\`\`\`bash
+\`\`\bash
 pip install -e .
 \`\`\`
 
@@ -38,18 +38,18 @@ This project uses environment variables to handle SMTP credentials securely. Bef
 * `SMTP_SENDER`: The alias or email address you want to appear in the "From" field.
 
 ### Setting variables on Linux/macOS:
-\`\`\`bash
+
 export SMTP_USER="your-email@gmail.com"
 export SMTP_PASS="your-app-password"
 export SMTP_SENDER="ScintPi Bot <scintpi-bot@example.com>"
-\`\`\`
+
 
 ### Setting variables on Windows (Command Prompt):
-\`\`\`cmd
+
 set SMTP_USER=your-email@gmail.com
 set SMTP_PASS=your-app-password
 set SMTP_SENDER=ScintPi Bot <scintpi-bot@example.com>
-\`\`\`
+
 
 *(Alternatively, you can use a `.env` file and the `python-dotenv` library to load these variables automatically, but ensure `.env` is listed in your `.gitignore`!)*
 
@@ -57,9 +57,8 @@ set SMTP_SENDER=ScintPi Bot <scintpi-bot@example.com>
 
 Once installed and your environment variables are set, simply run the pipeline script from the terminal:
 
-\`\`\`bash
+
 python run_pipeline.py
-\`\`\`
 
 This will:
 1. Load the targets from the CSV.
